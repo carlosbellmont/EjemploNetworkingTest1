@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejemplo Networking Test</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="empty_list">No se han encontrado personajes!</string>
+    <string name="an_error_occurred">Ha ocurrido un error</string>
+</resources>
