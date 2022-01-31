@@ -12,8 +12,8 @@ class PersonajeRemoteDataSource(apiClient: ApiClient) : PersonajeDataSource {
     private val service = apiClient.build()
 
     override fun obtenerPersonajesCallback(callback: OperationCallback<PersonajeModel>) {
-
         call = service.obtenerPersonajes()
+
         call?.enqueue(object : Callback<List<PersonajeModel>> {
             override fun onFailure(call: Call<List<PersonajeModel>>, t: Throwable) {
                 callback.onError(t.message)
